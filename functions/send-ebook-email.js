@@ -19,8 +19,8 @@ exports.handler = async function (event, context) {
   const emailData = {
     from: process.env.FROM_EMAIL,
     to: email,
-    subject: 'How to Start Reading Your Ebook',
-    text: 'Thanks for your purchase! Click here to get instructions on how to open your ebook: https://www.sourceofallwealth.com/e-book-install-instructions',
+    subject: `How to Start Reading Your Ebook`,
+    html: `Thanks for your purchase! Click <a href="https://www.sourceofallwealth.com/e-book-install-instructions">here</a> to get instructions on how to open your ebook.`,
   };
 
   try {
